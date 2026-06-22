@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Author: Marc B -->
+    <!-- Starter Code Refractored from FreeCodeCamp Project -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Markdown Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>HTML Markdown Converter</h1>
+        <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+    
+    <div id="container">
+        <div class="container markdown-section">
+            <div class="section-header">
+                <h2>Markdown Input</h2>
+                <span class="char-count">0 characters</span>
+            </div>
+            <textarea id="markdown-input" placeholder="Enter your HTML to markdown here... Try **bold**, *italic*, # headers, > quotes, ![alt](url), [link](url)"></textarea>
+        </div>
+        
+        <div class="container output-section">
+            <div class="section-header">
+                <h2>Raw HTML Output</h2>
+                <button id="copy-btn" class="copy-btn">Copy Text</button>
+            </div>
+            <div id="html-output"></div>
+        </div>
+        
+        <div class="container preview-section">
+            <div class="section-header">
+                <h2>HTML Preview</h2>
+            </div>
+            <div id="preview"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Hackermans Markdown</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
